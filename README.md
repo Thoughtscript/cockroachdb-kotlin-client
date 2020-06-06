@@ -135,7 +135,7 @@ Here, you'll learn how easy it is to do so!
 
     You should see `0` rows remaining in the `bugs` table.
 
-1. Verify that the Kotlin queries are correctly modifying the `bugs` table. In `Main.kt` comment out **line 34**:   
+1. Verify that the Kotlin queries are correctly modifying the `bugs` table. In [Main.kt](./cockroachdb-kotlin-client/src/main/kotlin/com/cockroachlabs/client/Main.kt) comment out **line 34**:   
 
     ```kotlin
     DeleteRow.execute(conn)
