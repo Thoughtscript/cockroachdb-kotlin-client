@@ -135,10 +135,16 @@ Here, you'll learn how easy it is to do so!
 
     You should see `0` rows remaining in the `bugs` table.
 
-1. Verify that the Kotlin queries are correctly modifying the `bugs` table. In [Main.kt](./cockroachdb-kotlin-client/src/main/kotlin/com/cockroachlabs/client/Main.kt) comment out **line 34**:   
+1. Verify that the Kotlin queries are correctly modifying the `bugs` table. In [Main.kt](./cockroachdb-kotlin-client/src/main/kotlin/com/cockroachlabs/client/Main.kt) comment out **line 36**:   
 
     ```kotlin
-    DeleteRow.execute(conn)
+    // Queries
+    InsertRow.execute(conn)
+    ReadRow.execute(conn)
+    UpdateRow.execute(conn)
+    ReadRow.execute(conn)
+    //DeleteRow.execute(conn)
+    ReadRow.execute(conn)
     ```
 
 1. Rerun the Kotlin sample by calling `$ ./gradlew run`. You should now see a single row in you console and in the Admin UI.
