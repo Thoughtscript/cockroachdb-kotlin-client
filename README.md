@@ -22,6 +22,7 @@ And, then how to accomplish the following using Kotlin:
 1. Install [Java 1.8](https://www.oracle.com/java/technologies/javase-jre8-downloads.html)
 1. Install [Gradle 6.5](https://gradle.org/)
 1. Install [Kotlin 1.3.72](https://kotlinlang.org/)
+1. (Optional) Install JetBrains [IntelliJ IDEA](https://kotlinlang.org/docs/tutorials/getting-started.html)
 
 > For additional help getting set up, consult the [documentation](https://www.cockroachlabs.com/docs/stable/).
 
@@ -43,7 +44,7 @@ For the purposes of this tutorial, you'll only need one and it can be launched i
     --background
     ```
 
-> These commands are included in the supplied Bash scripts. Execute them via: `$ bash 01-launch-cluster.sh`.
+> These commands are included in the supplied Bash scripts. Execute them via: [$ bash 01-launch-cluster.sh](./01-launch-cluster.sh).
 > It's recommended that you open **three** Bash terminals - one to run the Cockroach DB cluster, one to execute commands in the SQL client, and one to connect using the Kotlin sample.
 
 You'll want to create a few resources on your instance before launching the included Kotlin client.
@@ -62,7 +63,7 @@ You'll want to create a few resources on your instance before launching the incl
     GRANT ALL ON DATABASE kotlindb TO maxroach;
     ```
 
-> These commands are included in the supplied Bash scripts. Execute them via: `$ bash 02-prepare-db.sh`.
+> These commands are included in the supplied Bash scripts. Execute them via: [$ bash 02-prepare-db.sh](./02-prepare-db.sh).
 
 4. Verify that your database displays the database `kotlindb` and user grant `maxroach`!
 
@@ -78,7 +79,7 @@ Here, you'll learn how easy it is to do so!
 
 > **Note:** the supplied code sample uses popular [JDBC Postgres SQL](https://jdbc.postgresql.org/) to connect Kotlin to CockroachDB.
 
-1. Navigate to the `cockroachdb-kotlin-client` root and execute:
+1. Navigate to the [cockroachdb-kotlin-client](./cockroachdb-kotlin-client) root and execute:
 
     ```bash
     $ ./gradlew run
@@ -180,4 +181,4 @@ Check out:
 1. The [Cockroach DB](https://www.cockroachlabs.com/docs/stable/) reference documentation
 1. [Kotlin](https://kotlinlang.org/)
 1. [Gradle](https://gradle.org/)
-1. The [tutorial code sample]()
+1. The [tutorial code sample](https://github.com/Thoughtscript/cockroachdb-kotlin-client)
