@@ -121,7 +121,7 @@ Here, you'll learn how easy it is to do so!
     Executing SELECT * FROM kotlindb.bugs;
     Reading kotlindb.bugs row = [NO RESULTS FOUND]
     ```
-    The row was removed once no longer needed.
+    The row was removed once it was no longer needed.
 
     ```plaintext
     Closing connection ...
@@ -159,7 +159,7 @@ Here, you'll learn how easy it is to do so!
 
 ## Cleanup tutorial resources
 
-Feel free to continue exploring how to interact with your Cockroach DB cluster using the supplied Kotlin sample.
+Feel free to continue exploring how to interact with your Cockroach DB cluster using the supplied Kotlin sample. The JDBC code queries can be viewed within the [queries](./cockroachdb-kotlin-client/src/main/kotlin/com/cockroachlabs/client/queries) directory.
 
 When you're ready, execute the following commands to shut down and remove your tutorial resources:
 
