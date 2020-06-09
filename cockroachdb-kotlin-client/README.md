@@ -3,7 +3,7 @@
 [![](https://img.shields.io/badge/CockroachDB-20.1-darkgreen.svg)](https://com.cockroachlabs.com/)
 [![](https://img.shields.io/badge/Kotlin-1.3.72-green.svg)](https://kotlinlang.org/)
 [![](https://img.shields.io/badge/Gradle-6.5-darkslategray.svg)](https://gradle.org/)
-[![](https://img.shields.io/badge/JetBrains-Exposed-blue.svg)](https://github.com/JetBrains/Exposed)
+[![](https://img.shields.io/badge/JDBC-PostgresSQL-blue.svg)](https://jdbc.postgresql.org/)
 [![](https://img.shields.io/badge/LICENSE-MIT-red.svg)](https://opensource.org/licenses/MIT)
 
 This package supports the [tutorial sample](../README.md) written in Markdown.
@@ -106,7 +106,7 @@ That's it! You're ready to connect to the database programmatically.
     Executing SELECT * FROM kotlindb.bugs;
     Reading kotlindb.bugs row = [NO RESULTS FOUND]
     ```
-    The row was removed once no longer needed.
+    The row was removed once it was no longer needed.
 
     ```plaintext
     Closing connection ...
